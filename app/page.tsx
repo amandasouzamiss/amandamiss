@@ -219,12 +219,11 @@ export default function Home() {
         <div className="grid items-center gap-14 lg:grid-cols-[430px_1fr]">
           <Reveal direction="right">
             <div className="group relative overflow-hidden rounded-[2rem] border border-white/5">
-              <img
-                src="/amanda/cinza.jpg"
-                alt="Amanda Souza"
-                className="h-[520px] w-full object-cover object-top transition duration-1000 ease-out group-hover:scale-[1.035]"
-              />
-
+             <img
+  src="/amanda/cinza.jpg"
+  alt="Amanda Souza"
+  className="h-[520px] w-full object-cover object-[center_20%] transition duration-1000 ease-out group-hover:scale-[1.035]"
+/>
               <div className="absolute inset-0 bg-[#D4AF37]/0 transition duration-500 group-hover:bg-[#D4AF37]/[0.035]" />
             </div>
           </Reveal>
