@@ -222,7 +222,7 @@ export default function Home() {
              <img
   src="/amanda/cinza.jpg"
   alt="Amanda Souza"
-  className="h-[520px] w-full object-cover object-[center_20%] transition duration-1000 ease-out group-hover:scale-[1.035]"
+  className="h-[520px] w-full object-cover object-[center_18%] transition duration-1000 ease-out group-hover:scale-[1.035]"
 />
               <div className="absolute inset-0 bg-[#D4AF37]/0 transition duration-500 group-hover:bg-[#D4AF37]/[0.035]" />
             </div>
