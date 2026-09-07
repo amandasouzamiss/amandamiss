@@ -131,16 +131,31 @@ export default function Home() {
             </a>
           </nav>
 
-          <Link
-            href="/patrocinio"
-            className="group inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-black shadow-[0_8px_30px_rgba(212,175,55,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E2C45C] hover:shadow-[0_12px_35px_rgba(212,175,55,0.25)] active:translate-y-0 active:scale-[0.98]"
-          >
-            Seja patrocinador
+          <div className="flex items-center gap-3">
+            <a
+              href="https://missbrasildelasamericas.com.br/produto/amanda-souza/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full border border-[#D4AF37] bg-[#D4AF37]/10 px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#D4AF37] shadow-[0_8px_30px_rgba(212,175,55,0.1)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#D4AF37] hover:text-black active:translate-y-0 active:scale-[0.98]"
+            >
+              Votar
 
-            <span className="hidden transition-transform duration-300 group-hover:translate-x-1 sm:inline">
-              →
-            </span>
-          </Link>
+              <span className="hidden transition-transform duration-300 group-hover:translate-x-1 sm:inline">
+                →
+              </span>
+            </a>
+
+            <Link
+              href="/patrocinio"
+              className="group inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-black shadow-[0_8px_30px_rgba(212,175,55,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E2C45C] hover:shadow-[0_12px_35px_rgba(212,175,55,0.25)] active:translate-y-0 active:scale-[0.98]"
+            >
+              Seja patrocinador
+
+              <span className="hidden transition-transform duration-300 group-hover:translate-x-1 sm:inline">
+                →
+              </span>
+            </Link>
+          </div>
         </div>
       </header>
 
