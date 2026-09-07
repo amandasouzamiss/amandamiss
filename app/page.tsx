@@ -69,19 +69,18 @@ const numbers = [
 ];
 
 const galleryImages = [
-  {
-    src: "/amanda/vermelho.jpg",
-    alt: "Amanda Souza em ensaio profissional",
-  },
-  {
-    src: "/amanda/azul.jpg",
-    alt: "Amanda Souza em campanha profissional",
-  },
-  {
-    src: "/amanda/bege.jpg",
-    alt: "Amanda Souza em produção profissional",
-  },
-];
+  "29",
+  "30",
+  "31",
+  "32",
+  "27",
+  "14",
+  "03",
+  "08",
+].map((n) => ({
+  src: `/amanda/galeria/bastidor-${n}.jpg`,
+  alt: `Amanda Souza com a faixa de Miss Rio Grande do Sul`,
+}));
 
 export default function Home() {
   return (
@@ -117,10 +116,10 @@ export default function Home() {
             </a>
 
             <a
-              href="#trabalhos"
+              href="#galeria"
               className="relative py-2 transition duration-300 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 hover:after:w-full"
             >
-              Trabalhos
+              Galeria
             </a>
 
             <a
@@ -396,6 +395,52 @@ export default function Home() {
               </p>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* GALERIA */}
+      <section id="galeria" className="bg-[#111111] px-6 py-24">
+        <div className="mx-auto max-w-7xl">
+          <Reveal>
+            <div className="mb-14 text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.45em] text-[#D4AF37]">
+                Miss Rio Grande do Sul 2026
+              </p>
+
+              <h2
+                className="mt-4 text-4xl md:text-5xl"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                Galeria
+              </h2>
+
+              <p className="mx-auto mt-5 max-w-2xl leading-7 text-white/55">
+                Bastidores e ensaios da jornada de Amanda Souza rumo ao Miss
+                Brasil de Las Américas.
+              </p>
+            </div>
+          </Reveal>
+
+          <StaggerReveal
+            className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4"
+            stagger={0.04}
+          >
+            {galleryImages.map((image) => (
+              <StaggerItem key={image.src}>
+                <div className="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-white/10 bg-black">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(max-width:640px)50vw,(max-width:1024px)33vw,25vw"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerReveal>
         </div>
       </section>
 
