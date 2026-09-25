@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Script from "next/script";
 import { AtSign, Mail, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#080808]">
-      <div className="mx-auto max-w-7xl px-6 py-14">
+      <div className="mx-auto max-w-7xl px-6 pt-14 pb-28">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
           {/* Marca */}
 
@@ -120,6 +121,8 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
+            <kyvo-selo data-alinhar="direita" />
+
             <a
               href="#topo"
               className="flex items-center gap-2 text-sm text-white/40 transition hover:text-[#D4AF37]"
@@ -127,18 +130,11 @@ export default function Footer() {
               <ArrowUp size={16} />
               Voltar ao topo
             </a>
-
-            <a
-              href="https://bpresultados.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-white/30 transition hover:text-[#D4AF37]"
-            >
-              Desenvolvido por <span className="text-[#D4AF37]">BP Resultados</span>
-            </a>
           </div>
         </div>
       </div>
+
+      <Script src="https://kyvo.dev.br/selo.js" strategy="afterInteractive" />
     </footer>
   );
 }
