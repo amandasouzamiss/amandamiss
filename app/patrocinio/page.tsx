@@ -24,10 +24,10 @@ export default function PatrocinioPage() {
 
       <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-28">
         <img
-  src="/amanda/hero.jpg"
-  alt="Amanda Souza"
-  className="absolute -top-16 left-0 h-[115%] w-full object-cover"
-/>
+          src="/amanda/continente/continente-02.jpg"
+          alt="Amanda Souza, Miss Continente Brasil de Las Américas 2026"
+          className="absolute inset-0 h-full w-full object-cover object-[center_15%] lg:left-auto lg:w-[55%]"
+        />
 
         <div className="absolute inset-0 bg-black/70" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/65 to-transparent" />
@@ -42,12 +42,13 @@ export default function PatrocinioPage() {
               className="text-5xl leading-[0.95] md:text-7xl"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Sua marca ao lado da Miss Rio Grande do Sul.
+              Sua marca ao lado da Miss Continente Brasil de Las Américas 2026.
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-8 text-white/70">
-              Conecte sua empresa a uma jornada de representatividade,
-              elegância, influência e alcance nacional.
+              Conecte sua empresa ao ano de reinado de uma Miss Continente,
+              com representatividade, elegância, influência e alcance
+              nacional.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -91,7 +92,7 @@ export default function PatrocinioPage() {
               {
                 number: "01",
                 title: "Representatividade",
-                text: "Amanda representa oficialmente o Rio Grande do Sul em uma jornada de alcance nacional.",
+                text: "Miss Continente Brasil de Las Américas 2026 e Miss Rio Grande do Sul 2026, com alcance nacional.",
               },
               {
                 number: "02",
@@ -161,7 +162,7 @@ export default function PatrocinioPage() {
               className="text-4xl leading-tight md:text-6xl"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Sua marca presente em cada etapa da jornada.
+              Sua marca presente em cada momento do reinado.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
@@ -174,7 +175,7 @@ export default function PatrocinioPage() {
             {[
               "Conteúdo nas redes sociais",
               "Participação em campanhas publicitárias",
-              "Presença da marca durante a jornada",
+              "Presença da marca em eventos e agendas do título",
               "Produções personalizadas",
               "Ações promocionais e institucionais",
               "Associação de imagem",
@@ -195,9 +196,9 @@ export default function PatrocinioPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="overflow-hidden rounded-[32px] border border-white/10">
             <img
-              src="/amanda/faixa.jpg"
-              alt="Amanda Souza Miss Rio Grande do Sul"
-              className="h-[520px] w-full object-cover object-top"
+              src="/amanda/continente/continente-03.jpg"
+              alt="Amanda Souza, Miss Continente Brasil de Las Américas 2026"
+              className="h-[520px] w-full object-cover object-[center_15%]"
             />
           </div>
 
@@ -243,7 +244,7 @@ export default function PatrocinioPage() {
             className="text-4xl leading-tight md:text-7xl"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            Sua marca pode fazer parte desta jornada.
+            Sua marca pode fazer parte deste reinado.
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/60">

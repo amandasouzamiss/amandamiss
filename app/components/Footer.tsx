@@ -54,7 +54,7 @@ export default function Footer() {
                 href="#jornada"
                 className="transition hover:text-[#D4AF37]"
               >
-                Jornada
+                Trajetória
               </a>
 
               <a
