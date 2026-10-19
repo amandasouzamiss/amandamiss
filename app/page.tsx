@@ -69,18 +69,15 @@ const numbers = [
 ];
 
 const galleryImages = [
-  "29",
-  "30",
-  "31",
-  "32",
-  "27",
-  "14",
-  "03",
-  "08",
-].map((n) => ({
-  src: `/amanda/galeria/bastidor-${n}.jpg`,
-  alt: `Amanda Souza com a faixa de Miss Rio Grande do Sul`,
-}));
+  ...["02", "03", "07", "05", "06", "09", "10", "08"].map((n) => ({
+    src: `/amanda/continente/continente-${n}.jpg`,
+    alt: `Amanda Souza, Miss Continente Brasil de Las Américas 2026`,
+  })),
+  ...["29", "30", "31", "32", "27", "14", "03", "08"].map((n) => ({
+    src: `/amanda/galeria/bastidor-${n}.jpg`,
+    alt: `Amanda Souza com a faixa de Miss Rio Grande do Sul`,
+  })),
+];
 
 export default function Home() {
   return (
@@ -100,12 +97,19 @@ export default function Home() {
             </span>
           </a>
 
-          <nav className="hidden items-center gap-7 text-xs font-semibold uppercase tracking-[0.22em] text-white/65 md:flex">
+          <nav className="hidden items-center gap-7 text-xs font-semibold uppercase tracking-[0.22em] text-white/65 lg:flex">
             <a
               href="#historia"
               className="relative py-2 transition duration-300 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 hover:after:w-full"
             >
               História
+            </a>
+
+            <a
+              href="#conquista"
+              className="relative py-2 transition duration-300 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Conquista
             </a>
 
             <a
@@ -176,7 +180,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <Reveal direction="up">
               <p className="mb-5 text-xs font-semibold uppercase tracking-[0.45em] text-[#D4AF37]">
-                Miss Rio Grande do Sul 2026
+                Miss Continente Brasil de Las Américas 2026
               </p>
             </Reveal>
 
@@ -194,8 +198,9 @@ export default function Home() {
 
             <Reveal direction="up" delay={0.16}>
               <p className="mt-7 max-w-xl text-lg leading-8 text-white/75">
-                Representando o Rio Grande do Sul no Miss Brasil de Las
-                Américas com propósito, elegância e autenticidade.
+                Do Rio Grande do Sul para o Brasil: eleita Miss Continente
+                Brasil de Las Américas com propósito, elegância e
+                autenticidade.
               </p>
             </Reveal>
 
@@ -263,10 +268,68 @@ export default function Home() {
                 </p>
 
                 <p>
-                  Como Miss Rio Grande do Sul 2026, leva ao cenário nacional
-                  uma história real, conectada à representatividade feminina e
-                  ao poder de inspirar outras pessoas.
+                  Eleita Miss Rio Grande do Sul 2026 e coroada Miss Continente
+                  Brasil de Las Américas 2026, leva ao cenário nacional uma
+                  história real, conectada à representatividade feminina e ao
+                  poder de inspirar outras pessoas.
                 </p>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* CONQUISTA */}
+      <section id="conquista" className="bg-black px-6 py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1fr_1.1fr]">
+          <Reveal direction="right">
+            <div className="group relative overflow-hidden rounded-[2rem] border border-[#D4AF37]/25">
+              <img
+                src="/amanda/continente/continente-04.jpg"
+                alt="Amanda Souza sendo coroada Miss Continente Brasil de Las Américas 2026"
+                className="h-[560px] w-full object-cover object-[center_25%] transition duration-1000 ease-out group-hover:scale-[1.035]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            </div>
+          </Reveal>
+
+          <Reveal direction="left" delay={0.1}>
+            <div>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+                Nova conquista
+              </p>
+
+              <h2
+                className="max-w-3xl text-4xl font-bold leading-tight md:text-5xl"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                Miss Continente{" "}
+                <span className="text-[#D4AF37]">
+                  Brasil de Las Américas 2026
+                </span>
+              </h2>
+
+              <p className="mt-7 max-w-2xl text-base leading-8 text-white/68 md:text-lg">
+                Representando o Rio Grande do Sul, Amanda Souza conquistou o
+                título de Miss Continente no Miss Brasil de Las Américas 2026,
+                coroando uma jornada de dedicação, presença e autenticidade.
+              </p>
+
+              <div className="mt-9 grid max-w-xl grid-cols-2 gap-4">
+                {["01", "03"].map((n) => (
+                  <div
+                    key={n}
+                    className="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-white/10"
+                  >
+                    <Image
+                      src={`/amanda/continente/continente-${n}.jpg`}
+                      alt="Amanda Souza com a coroa e a faixa de Miss Continente Brasil de Las Américas"
+                      fill
+                      sizes="(max-width:1024px)50vw,280px"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </Reveal>
@@ -385,8 +448,8 @@ export default function Home() {
                 className="text-4xl leading-tight md:text-6xl"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Representando o Rio Grande do Sul no Miss Brasil de Las
-                Américas 2026.
+                Do Rio Grande do Sul ao título de Miss Continente Brasil de
+                Las Américas 2026.
               </h2>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-white/72">
@@ -404,7 +467,7 @@ export default function Home() {
           <Reveal>
             <div className="mb-14 text-center">
               <p className="text-xs font-semibold uppercase tracking-[0.45em] text-[#D4AF37]">
-                Miss Rio Grande do Sul 2026
+                Miss Continente Brasil de Las Américas 2026
               </p>
 
               <h2
@@ -415,8 +478,8 @@ export default function Home() {
               </h2>
 
               <p className="mx-auto mt-5 max-w-2xl leading-7 text-white/55">
-                Bastidores e ensaios da jornada de Amanda Souza rumo ao Miss
-                Brasil de Las Américas.
+                A coroação, os bastidores e os ensaios da jornada de Amanda
+                Souza no Miss Brasil de Las Américas.
               </p>
             </div>
           </Reveal>

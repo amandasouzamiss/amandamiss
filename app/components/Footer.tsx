@@ -18,12 +18,13 @@ export default function Footer() {
               className="text-4xl leading-tight"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Miss Rio Grande do Sul 2026
+              Miss Continente Brasil de Las Américas 2026
             </h2>
 
             <p className="mt-6 max-w-md text-base leading-7 text-white/60">
-              Representando o Rio Grande do Sul no Miss Brasil de Las Américas,
-              inspirando pessoas através da elegância, autenticidade e propósito.
+              Do Rio Grande do Sul ao título de Miss Continente Brasil de Las
+              Américas, inspirando pessoas através da elegância, autenticidade e
+              propósito.
             </p>
           </div>
 

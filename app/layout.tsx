@@ -13,9 +13,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amanda Souza | Miss Rio Grande do Sul 2026",
+  title: "Amanda Souza | Miss Continente Brasil de Las Américas 2026",
   description:
-    "Conheça Amanda Souza, Miss Rio Grande do Sul 2026, modelo, empresária e influenciadora digital rumo ao Miss Brasil de Las Américas.",
+    "Conheça Amanda Souza, Miss Continente Brasil de Las Américas 2026 e Miss Rio Grande do Sul 2026, modelo, empresária e influenciadora digital.",
 };
 
 export default function RootLayout({
