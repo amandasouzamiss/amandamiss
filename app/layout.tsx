@@ -15,7 +15,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Amanda Souza | Miss Continente Brasil de Las Américas 2026",
   description:
-    "Conheça Amanda Souza, Miss Continente Brasil de Las Américas 2026 e Miss Rio Grande do Sul 2026, modelo, empresária e influenciadora digital.",
+    "Conheça Amanda Souza, Miss Continente Brasil de Las Américas 2026, rumo à etapa internacional em Punta Cana. Seja um patrocinador dessa missão.",
 };
 
 export default function RootLayout({

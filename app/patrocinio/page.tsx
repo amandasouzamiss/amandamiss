@@ -35,20 +35,21 @@ export default function PatrocinioPage() {
         <div className="relative z-10 mx-auto w-full max-w-7xl py-24">
           <div className="max-w-3xl">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.45em] text-[#D4AF37]">
-              Oportunidade de patrocínio
+              Rumo a Punta Cana · Etapa internacional
             </p>
 
             <h1
               className="text-5xl leading-[0.95] md:text-7xl"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Sua marca ao lado da Miss Continente Brasil de Las Américas 2026.
+              Leve sua marca a Punta Cana com a Miss Continente Brasil.
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-8 text-white/70">
-              Conecte sua empresa ao ano de reinado de uma Miss Continente,
-              com representatividade, elegância, influência e alcance
-              nacional.
+              Amanda Souza, Miss Continente Brasil de Las Américas 2026, vai
+              representar o Brasil na etapa internacional em Punta Cana, na
+              República Dominicana. Estamos em busca de patrocinadores para
+              embarcar conosco nesse sonho.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -92,7 +93,7 @@ export default function PatrocinioPage() {
               {
                 number: "01",
                 title: "Representatividade",
-                text: "Miss Continente Brasil de Las Américas 2026 e Miss Rio Grande do Sul 2026, com alcance nacional.",
+                text: "Miss Continente Brasil de Las Américas 2026, representando o Brasil na etapa internacional em Punta Cana.",
               },
               {
                 number: "02",
@@ -162,12 +163,14 @@ export default function PatrocinioPage() {
               className="text-4xl leading-tight md:text-6xl"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Sua marca presente em cada momento do reinado.
+              Sua marca presente na etapa internacional.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
-              As entregas podem ser personalizadas de acordo com os objetivos,
-              o posicionamento e o público da sua empresa.
+              O apoio pode ser em dinheiro ou em serviços: confinamento
+              oficial, passagens, trajes, produção e locação de vestidos. As
+              entregas são personalizadas de acordo com os objetivos da sua
+              empresa.
             </p>
           </div>
 
@@ -175,9 +178,10 @@ export default function PatrocinioPage() {
             {[
               "Conteúdo nas redes sociais",
               "Participação em campanhas publicitárias",
-              "Presença da marca em eventos e agendas do título",
+              "Presença da marca na viagem a Punta Cana",
               "Produções personalizadas",
               "Ações promocionais e institucionais",
+              "Parcerias de trajes e locação de vestidos",
               "Associação de imagem",
             ].map((item) => (
               <div
@@ -244,7 +248,7 @@ export default function PatrocinioPage() {
             className="text-4xl leading-tight md:text-7xl"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            Sua marca pode fazer parte deste reinado.
+            Embarque conosco nesse sonho.
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/60">

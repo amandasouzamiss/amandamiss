@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Crown } from "lucide-react";
+import { ArrowUpRight, Crown, Plane, Hotel, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Footer from "./components/Footer";
 import Partners from "./components/Partners";
@@ -48,6 +48,24 @@ const partnerships = [
     "https://www.instagram.com/reel/DTgSCR3jyfZ/?igsh=OTBydW81eXN3dXVy",
 },
 ]
+
+const missionNeeds = [
+  {
+    icon: Hotel,
+    title: "Confinamento oficial",
+    text: "Hospedagem e alimentação durante o período de confinamento do concurso internacional.",
+  },
+  {
+    icon: Plane,
+    title: "Passagens aéreas",
+    text: "A viagem do Brasil até Punta Cana, na República Dominicana.",
+  },
+  {
+    icon: Sparkles,
+    title: "Trajes e produção",
+    text: "Vestidos, traje típico e produção — com espaço para parcerias de locação e marcas de moda.",
+  },
+];
 
 const numbers = [
   {
@@ -103,6 +121,13 @@ export default function Home() {
               className="relative py-2 transition duration-300 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 hover:after:w-full"
             >
               Conquista
+            </a>
+
+            <a
+              href="#missao"
+              className="relative py-2 transition duration-300 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Missão
             </a>
 
             <a
@@ -194,16 +219,28 @@ export default function Home() {
               </p>
 
               <p className="mt-3 max-w-xl text-lg leading-8 text-white/70">
-                Do Rio Grande do Sul para o Brasil: um título conquistado com
-                propósito, elegância e autenticidade.
+                Do Rio Grande do Sul para o Brasil, e agora rumo ao mundo: a
+                próxima missão é representar o Brasil na etapa internacional
+                em Punta Cana.
               </p>
             </Reveal>
 
             <Reveal direction="up" delay={0.24}>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="#conquista"
+                  href="#missao"
                   className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#D4AF37] px-7 py-3 text-center text-sm font-bold uppercase tracking-[0.16em] text-black shadow-[0_10px_35px_rgba(212,175,55,0.15)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#E2C45C] hover:shadow-[0_16px_45px_rgba(212,175,55,0.25)] active:translate-y-0 active:scale-[0.98]"
+                >
+                  Apoie a missão
+
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </a>
+
+                <a
+                  href="#conquista"
+                  className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/20 px-7 py-3 text-center text-sm font-bold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37] hover:bg-[#D4AF37]/5 hover:text-[#D4AF37] active:translate-y-0 active:scale-[0.98]"
                 >
                   Ver a coroação
 
@@ -211,17 +248,6 @@ export default function Home() {
                     →
                   </span>
                 </a>
-
-                <Link
-                  href="/patrocinio"
-                  className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/20 px-7 py-3 text-center text-sm font-bold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37] hover:bg-[#D4AF37]/5 hover:text-[#D4AF37] active:translate-y-0 active:scale-[0.98]"
-                >
-                  Seja patrocinador
-
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
-                </Link>
               </div>
             </Reveal>
           </div>
@@ -280,6 +306,99 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* MISSÃO PUNTA CANA */}
+      <section
+        id="missao"
+        className="relative overflow-hidden bg-[#111111] px-6 py-24"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(212,175,55,0.12),transparent_60%)]" />
+
+        <div className="relative mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
+          <Reveal direction="right">
+            <div>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+                Próxima missão · Punta Cana, República Dominicana
+              </p>
+
+              <h2
+                className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                Agora a missão é{" "}
+                <span className="text-[#D4AF37]">ainda maior.</span>
+              </h2>
+
+              <p className="mt-7 max-w-2xl text-base leading-8 text-white/70 md:text-lg">
+                Como Miss Continente Brasil de Las Américas 2026, Amanda vai
+                representar o Brasil na etapa internacional em Punta Cana. Para
+                isso, estamos em busca de patrocinadores para embarcar conosco
+                nesse sonho.
+              </p>
+
+              <StaggerReveal
+                className="mt-10 grid gap-4 sm:grid-cols-3"
+                stagger={0.1}
+              >
+                {missionNeeds.map((item) => (
+                  <StaggerItem key={item.title}>
+                    <div className="h-full rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40">
+                      <item.icon className="h-6 w-6 text-[#D4AF37]" />
+
+                      <h3 className="mt-4 text-base font-semibold text-white">
+                        {item.title}
+                      </h3>
+
+                      <p className="mt-2 text-sm leading-6 text-white/55">
+                        {item.text}
+                      </p>
+                    </div>
+                  </StaggerItem>
+                ))}
+              </StaggerReveal>
+
+              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href="/patrocinio"
+                  className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#D4AF37] px-7 py-3 text-sm font-bold uppercase tracking-[0.16em] text-black shadow-[0_10px_35px_rgba(212,175,55,0.15)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#E2C45C] hover:shadow-[0_16px_45px_rgba(212,175,55,0.25)] active:translate-y-0 active:scale-[0.98]"
+                >
+                  Quero patrocinar
+
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+
+                <a
+                  href="/midia-kit-amanda-souza.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/20 px-7 py-3 text-sm font-bold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37] hover:bg-[#D4AF37]/5 hover:text-[#D4AF37] active:translate-y-0 active:scale-[0.98]"
+                >
+                  Ver mídia kit
+
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    ↗
+                  </span>
+                </a>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal direction="left" delay={0.1}>
+            <div className="relative mx-auto max-w-md overflow-hidden rounded-[2rem] border border-[#D4AF37]/30 shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+              <Image
+                src="/amanda/missao/punta-cana.jpg"
+                alt="Miss Continente Brasil de Las Américas, Amanda Souza: agora a missão é ainda maior. Representar o Brasil na etapa internacional em Punta Cana."
+                width={1080}
+                height={1350}
+                sizes="(max-width:1024px)90vw,450px"
+                className="h-auto w-full"
+              />
             </div>
           </Reveal>
         </div>
@@ -380,7 +499,7 @@ export default function Home() {
               <p>
                 Amanda Souza une presença digital, imagem premium e
                 o prestígio de um título nacional: Miss Continente Brasil de
-                Las Américas 2026.
+                Las Américas 2026, a caminho da etapa internacional.
               </p>
 
               <p>

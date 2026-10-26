@@ -23,8 +23,7 @@ export default function Footer() {
 
             <p className="mt-6 max-w-md text-base leading-7 text-white/60">
               Do Rio Grande do Sul ao título de Miss Continente Brasil de Las
-              Américas, inspirando pessoas através da elegância, autenticidade e
-              propósito.
+              Américas, e agora rumo à etapa internacional em Punta Cana.
             </p>
           </div>
 
