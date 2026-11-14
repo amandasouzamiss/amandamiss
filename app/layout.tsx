@@ -41,7 +41,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${playfair.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Cloudflare Web Analytics: medição de visitas sem cookies */}
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c605843ad0ef4f36a1f754f7ef7aeb0f"}'></script>
+      </body>
     </html>
   );
 }
