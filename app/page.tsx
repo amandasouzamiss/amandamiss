@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Crown, Plane, Hotel, Sparkles } from "lucide-react";
 import Image from "next/image";
@@ -96,6 +97,10 @@ const galleryImages = [
     alt: `Amanda Souza com a faixa de Miss Rio Grande do Sul`,
   })),
 ];
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

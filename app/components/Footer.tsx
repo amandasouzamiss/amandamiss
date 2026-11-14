@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
-import { AtSign, Mail, ArrowUp } from "lucide-react";
+import { AtSign, Mail, ArrowUp, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -91,7 +91,17 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:contato@amandasouza.com.br"
+                href="https://wa.me/5521996329869"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-white/60 transition hover:text-[#D4AF37]"
+              >
+                <MessageCircle size={18} />
+                WhatsApp
+              </a>
+
+              <a
+                href="mailto:oie.amandasouza@gmail.com"
                 className="flex items-center gap-3 text-white/60 transition hover:text-[#D4AF37]"
               >
                 <Mail size={18} />

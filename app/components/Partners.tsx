@@ -13,7 +13,8 @@ const partners = [
   "/amanda/logos/logo8.png",
 ];
 
-const repeatedPartners = Array.from({ length: 8 }, () => partners).flat();
+// 4 cópias bastam para a faixa não abrir buraco nem em tela larga (a animação anda metade = 2 cópias).
+const repeatedPartners = Array.from({ length: 4 }, () => partners).flat();
 
 export default function Partners() {
   return (
